@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<head>
+    <link rel="icon" href="/favicon.jpg" type="image/x-icon" />
+    <title>Challenge - {{page.id}}</title>
+    <link rel="stylesheet" href="/courses.css">
+</head>
+ {% endblock %}
+
+{% block content %} 
+<div id="courses">
+    <div class="course">
+        
+        <div class="card"  id="{{page.id}}">
+            <iframe src="https://rocketseat.com.br/{{page.id}}" frameborder="0"></iframe>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="script.js"></script>
+{% endblock %}

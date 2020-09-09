@@ -1,0 +1,33 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<head>
+    <link rel="icon" href="/favicon.jpg" type="image/x-icon" />
+    <title>Challenge - Cursos</title>
+    <link rel="stylesheet" href="/courses.css">
+</head>
+ {% endblock %}
+
+{% block content %} 
+<div id="courses">
+    <h1>Cursos Disponíveis</h1>
+    <div class="cards">
+        
+        {% for page in pages %}
+        <div class="card" id="{{page.id}}">
+            <img src="{{page.image}}" alt="Imagem de {{page.name}}">
+            <h2>{{page.name}}</h2>
+            <div class="info-card">
+                <p>{{page.module}}</p>
+                <p class="card-price">{{page.price}}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="script.js"></script>
+{% endblock %}

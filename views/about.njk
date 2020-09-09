@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<head>
+    <link rel="icon" href="/favicon.jpg" type="image/x-icon" />
+    <title>Challenge - Sobre</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+{% endblock %}
+
+{% block content %}
+<div id="content">
+    <img src="{{about.image}}" alt="Imagem de {{about.name}}">
+    <h1>{{about.name}}</h1>
+    <h2>{{about.description}}</h2>
+    <ul>
+        {% for technologie in about.technologies %}
+        <li>{{technologie.name}}</li>
+        {% endfor %}
+    </ul> 
+</div>
+{% endblock %}
+
+{% block footer %}
+<div id="footer" class="menu">
+    <a href="https://github.com/Rocketseat" target="_blank">GitHub</a>
+    <a href="https://www.instagram.com/rocketseat_oficial/?hl=pt-br" target="_blank">Instagram</a>
+    <a href="https://pt-br.facebook.com/rocketseat/" target="_blank">Facebook</a>
+</div>
+{% endblock %}
