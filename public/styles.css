@@ -73,3 +73,9 @@ header{
 #footer a{
     border-bottom: 1px solid yellow;
 }
+
+#footer .footer-box {
+    margin-top: 6%;
+    color: white;
+    opacity: 0.6;
+}

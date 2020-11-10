@@ -19,12 +19,9 @@
         {% endfor %}
     </ul> 
 </div>
+
 {% endblock %}
 
 {% block footer %}
-<div id="footer" class="menu">
-    <a href="https://github.com/Rocketseat" target="_blank">GitHub</a>
-    <a href="https://www.instagram.com/rocketseat_oficial/?hl=pt-br" target="_blank">Instagram</a>
-    <a href="https://pt-br.facebook.com/rocketseat/" target="_blank">Facebook</a>
-</div>
+    {% include "parts/footer.njk" %}
 {% endblock %}
